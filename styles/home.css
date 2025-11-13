@@ -1,0 +1,354 @@
+
+/* Para poder ajustar lo mejor posible el diseño de la página
+al original uso la imagen de ejemplo como fondo y así poder
+ir colocando y ajustando todos los elementos en su sitio
+ */
+
+
+.fondo-estatico {
+    /* background-image: url(../imagenes/image-1.png);   */
+    background:  linear-gradient(135deg, #191a1d, #3e424b, #2b2e35, #24262c, #1d1e23, #141518);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: max-content;   /*Con esto se soluciona el problema del scroll horizontal y el fondo */
+    margin: -6px;
+    height: fit-content;
+    /* background-position-y: 8px; */   /*Con esto ajusto la altura de la imagen en el fondo para poder copiarla*/
+}
+
+    /* BARRA DE NAVEGACION SUPERIOR */
+
+.barra-navegacion   {
+    display: grid;
+    grid-template-columns: 337px 853px auto 640px 5px;
+    background-color: black;
+    color: white;
+}
+
+    /* Columna Izquierda */
+
+.barra-navegacion > .columna-izquierda {
+    width: 280px;
+    height: 100%;
+}
+
+.barra-navegacion > .columna-izquierda > .logo-white img{
+    max-width: 280px;
+    height: 47.5px;
+    padding: 40px 0px 0px 23px;
+}
+
+    /* Columna Centro */
+
+.barra-navegacion > .columna-centro {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    height: 100%;
+}
+
+.barra-navegacion > .columna-centro > .encabezado {
+    font-family: "Lucida Sans Unicode"; 
+    color: #eddd84;
+    margin-top: 23px;
+    font-weight: 800;
+    font-size: 1.45rem;
+    padding-left: 11px;
+}
+
+.barra-navegacion > .columna-centro > .menu-centro {
+    font-family: 'Lucida Sans Unicode'; 
+    display: grid;
+    grid-template-columns: 99px 133px 96px 202px 200px;
+    font-weight: 900;
+    margin-top: -5px;
+    font-size: 1.8rem;
+    margin-top: -5px;
+}
+
+.barra-navegacion > .columna-centro > .menu-centro > .pens {
+    padding-left: 11px;  
+} 
+
+.barra-navegacion > .columna-centro > .menu-centro > .spark {
+    font-weight: 600;
+    font-size: 1.7rem;
+    transform: translateY(4px);
+    opacity: 0.6;
+}
+
+    /* Columna Derecha */
+
+.barra-navegacion > .columna-derecha {
+    font-family: "Calibri";
+    display: grid;
+    grid-template-columns: 192px 123px 137px 180px;
+    font-weight: 900;
+    font-size: 1.65rem;
+    margin-top: 7px; 
+    align-content: center;
+    align-items: center;
+
+}
+.barra-navegacion > .columna-derecha > .create {
+    padding-left: 33px;
+    padding-top: 20px;
+    padding-bottom: 16px;
+    margin-top: 13px;
+    border-radius: 5px;
+    font-size: 1.95rem;
+    background-color: #36383f ;
+}
+
+.barra-navegacion > .columna-derecha > .create > .fa-angle-down {
+    font-size: 2.5rem;
+    color: #4BCE79;
+    vertical-align: middle;  /* Alinea mejor con el texto */
+    margin-left: 4px;
+    margin-right: -1px;
+}
+
+.barra-navegacion > .columna-derecha > .icon-magnify {
+    font-size: 3rem;
+    padding-left: 38px;
+    transform: translateY(10px); /* ajusta la posición vertical del icono */
+    border-radius: 5px;
+    color: #7b7e8b;    
+    background-color:transparent ;
+}
+
+.barra-navegacion > .columna-derecha > .login {
+    padding-left: 33px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    margin-top: 13px;
+    border-radius: 5px;
+    background-color:#36383f ;
+    font-weight: 900;
+    font-size: 1.85rem;
+}
+
+.barra-navegacion > .columna-derecha > .signup {
+    padding-left: 32px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    margin-top: 13px;
+    margin-left: 20px;
+    border-radius: 5px;
+    background-color:#36383f ;
+    font-weight: 900;
+    font-size: 1.85rem;
+
+}
+
+  
+
+.contenedor-top {
+    height: 100px; /* Este es un separador para posicionar la parte central */
+}
+
+
+    /* CONTENEDOR PARTE CENTRAL */
+
+.contenedor-central {
+    display: grid;
+    grid-template-columns: 950px auto;
+    justify-content: space-between;
+    background-color: transparent;  
+}
+
+.contenedor-central > .cc-columna-izquierda > .texto {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    font-size: 3.2rem;
+    margin-left: 72px;
+    color: white;
+    line-height: 1.16;
+}
+
+.contenedor-central > .cc-columna-izquierda > .texto > .texto-superior >.text-thin {
+    font-weight: 100;
+    opacity: 0.6;
+}
+
+.contenedor-central > .cc-columna-izquierda > .texto > .texto-superior >.text-bold {
+    font-weight: 500;
+    opacity: 1;
+}
+
+.contenedor-central > .cc-columna-izquierda > .texto > .icono-mano{
+    opacity: 1;
+}
+
+.contenedor-central > .cc-columna-izquierda > .texto > .texto-inferior {
+    font-size: 2.6rem;
+    opacity: 0.6;
+    line-height: 1.5;
+}
+
+    /* Pulsadores de la Columna Izquierda */
+
+.contenedor-central > .cc-columna-izquierda >.cc-botones {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+      
+    display: grid;
+    grid-template-columns: 405px 335px;
+    width: 750px;
+    margin-left: 72px;
+    align-content: space-between;
+    align-items: center;
+    
+    background-color: transparent;
+    color: white;
+}
+
+.contenedor-central > .cc-columna-izquierda > .cc-botones > .btn-sign-up-for-free {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 22px;
+    padding-bottom: 20px;
+    margin-top: 14px;
+    text-align: center;
+    border-radius: 5px;
+    background-color:#4bce79 ;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.83rem;
+    letter-spacing: -0.03rem;
+    color:black;
+}
+
+.contenedor-central > .cc-columna-izquierda > .cc-botones > .btn-learn-more {
+    padding-left: 32px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    margin-top: 15px;
+    margin-left: 22px;
+    border-radius: 5px;
+    background-color:black ;
+    font-weight: 600;
+    font-size: 2.83rem;
+    letter-spacing: -0.03rem;
+    color: white;
+}
+
+    /* Columna Derecha */
+
+.contenedor-central > .cc-columna-derecha > .cc-texto-derecha {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    font-size: 1.65rem;
+    letter-spacing: -0.035rem;
+    font-weight: 600;
+    margin-left: 19px;
+    margin-top: -7px;
+    color: white;
+    
+}
+
+.contenedor-central > .cc-columna-derecha > .cc-texto-derecha .texto-resaltado {
+    color: #63c9f5;
+}
+
+.contenedor-central >.cc-columna-derecha > .cc-imagen {
+    padding-top: 12px;
+}
+
+    /* BARRA DE NAVEGACION INFERIOR */
+
+.barra-navegacion-inferior {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    background-color: #36383f;
+
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    font-size: 1.65rem;
+    letter-spacing: -0.035rem;
+    font-weight: 600;
+    color: white;
+    margin-top: 7px;
+}
+
+.barra-navegacion-inferior > .teams {
+
+    padding-left: 88px;
+    padding-bottom: 17px;
+    padding-top: 17px;
+    margin-right: 4px;
+    border: 2.5px solid #656565;
+}
+
+.barra-navegacion-inferior > .teams > .texto-aumentado1 { 
+    font-size: 2.25rem;
+    font-weight: 900;
+    color: white;
+}
+
+.barra-navegacion-inferior > .education {
+
+    padding-left: 55px;
+    padding-bottom: 17px;
+    padding-top: 17px;
+    margin-left: -4px;
+    border: 2.5px solid #656565;
+}
+
+.barra-navegacion-inferior > .education > .texto-aumentado2 {
+    font-size: 2.25rem;
+    font-weight: 900;
+    letter-spacing: -0.03;
+    color: white;
+}
+
+.barra-navegacion-inferior > .privacy {
+
+    padding-left: 82px;
+    padding-bottom: 17px;
+    padding-top: 17px;
+    margin-right: 0px;
+    border: 2.5px solid #656565;
+}
+
+.barra-navegacion-inferior > .privacy > .texto-aumentado3 {
+    font-size: 2.25rem;
+    font-weight: 900;
+    color: white;
+    text-shadow: 1px 1px 2px white;
+}
+
+.barra-navegacion-inferior > .writing {
+
+    padding-left: 87px;
+    padding-bottom: 17px;
+    padding-top: 17px;
+    border: 2.5px solid #656565;
+}
+
+.barra-navegacion-inferior > .writing > .texto-aumentado4 {
+    font-size: 2.25rem;
+    font-weight: 900;
+    color: white;
+    text-shadow: 1px 1px 2px white;
+}
+
+.contenedor-bottom {
+    padding-top: 28px;
+    background-color: #191a1d;
+}
+
+
+
